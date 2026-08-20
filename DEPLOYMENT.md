@@ -14,6 +14,7 @@ The easiest way to run the entire stack (API, Redis, Postgres, Celery) locally.
 docker-compose up --build
 ```
 *   **API**: `http://localhost:8000`
+*   **Frontend Dashboard**: `http://localhost:3000`
 *   **API Docs (Swagger)**: `http://localhost:8000/docs`
 *   **Redis**: `localhost:6379`
 

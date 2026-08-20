@@ -5,10 +5,16 @@ services:
     build: .
     command: gunicorn -w 4 -k uvicorn.workers.UvicornWorker src.api.main:app --bind 0.0.0.0:8000
     ports:
-      - "80:8000"
+      - "8000:8000"
     environment:
       - DATABASE_URL=${DATABASE_URL}
       - REDIS_URL=${REDIS_URL}
+    restart: always
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
     restart: always
 
   worker:

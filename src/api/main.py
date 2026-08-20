@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict
 import pandas as pd
@@ -11,6 +12,15 @@ from src.models.customer_scoring import CustomerRiskScorer
 from src.models.anomaly_detection import TransactionAnomalyDetector
 
 app = FastAPI(title="Finance Data Science API")
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # In production, specify the actual frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Initialize models
 fraud_detector = FraudDetector()

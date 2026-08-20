@@ -17,7 +17,7 @@ This project focuses on various financial data science challenges using a robust
 - **Data Manipulation**: pandas, numpy, scipy.
 - **Statistical Modeling**: statsmodels, prophet.
 - **Machine Learning**: scikit-learn, XGBoost, LightGBM.
-- **Visualization**: matplotlib, seaborn, plotly, Plotly Dash.
+- **Visualization**: matplotlib, seaborn, plotly, Plotly Dash, React (Frontend).
 - **Financial Data**: yfinance, pandas-datareader.
 - **Backend & APIs**: FastAPI, Django + Django REST Framework (DRF).
 - **Asynchronous Processing**: Celery, Redis.
@@ -36,6 +36,7 @@ This project focuses on various financial data science challenges using a robust
     - [segmentation.py](file:///C:/Users/bonmm/OneDrive/Desktop/finance/src/models/segmentation.py): K-Means clustering for customer segmentation.
 - `src/api/`: FastAPI implementation for exposing models as services.
 - `src/tasks/`: Celery task definitions for asynchronous processing.
+- `frontend/`: React + Vite + Tailwind CSS dashboard.
 ### Installation
 To install the required dependencies, run:
 ```bash
