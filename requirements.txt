@@ -23,6 +23,13 @@ uvicorn
 django
 djangorestframework
 dash
+pydantic
+pydantic-settings
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
 
 # Task Queues & Caching
 redis
@@ -35,3 +42,7 @@ torchaudio
 
 # MLOps
 mlflow
+
+# Production
+gunicorn
+python-dotenv

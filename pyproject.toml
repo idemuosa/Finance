@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance-ds"
+version = "0.1.0"
+description = "Finance Data Science project for fraud detection, risk scoring, and forecasting."
+authors = [
+    { name = "idemuosa", email = "idemudiawisdom27@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pandas",
+    "scikit-learn",
+    "xgboost",
+    "lightgbm",
+    "prophet",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "celery",
+    "redis"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
