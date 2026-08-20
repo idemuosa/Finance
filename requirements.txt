@@ -1,0 +1,37 @@
+# Core Data Science
+pandas
+numpy
+scipy
+statsmodels
+scikit-learn
+xgboost
+lightgbm
+prophet
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Financial Data
+yfinance
+pandas-datareader
+
+# Web Frameworks & APIs
+fastapi
+uvicorn
+django
+djangorestframework
+dash
+
+# Task Queues & Caching
+redis
+celery
+
+# Deep Learning
+torch
+torchvision
+torchaudio
+
+# MLOps
+mlflow
